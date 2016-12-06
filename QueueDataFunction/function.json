@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "type": "eventHub",
+      "name": "outputEventHubMessage",
+      "path": "tolldata",
+      "connection": "tolldataeh",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
